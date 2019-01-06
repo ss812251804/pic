@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <style>
+        *{
+            margin:0;
+            padding:0
+        }
+
+
+        #content{
+            height: 1261px;
+            width:938px;
+            margin: 0 auto;
+
+        }
+        #contentSecond{
+            height: 1261px;
+            width:938px;
+            margin: 0 auto;
+            display: none;
+
+        }
+
+
+        #contentThree{
+            height: 1261px;
+            width:938px;
+            margin: 0 auto;
+            display: none;
+
+        }
+        #contentFour{
+            height: 1261px;
+            width:938px;
+            margin: 0 auto;
+            display: none;
+
+        }
+
+
+
+        #header{
+            height: 100px;
+            width:100%;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #222222;
+        }
+
+        #header1{
+            height: 100px;
+            width:290px;
+            float: left;
+            margin: 0 auto;
+            background-color: #222222;
+        }
+
+        #header2{
+            height: 100px;
+            width:450px;
+            float: left;
+            margin: 0 auto;
+            background-color: #222222;
+            color: #FFFFFF;
+        }
+
+        #header3{
+            height: 100px;
+            width:488px;
+            float: left;
+            margin: 0 auto;
+
+        }
+
+        .header31{
+            height: 20px;
+            width: 90px;
+            margin: 0 auto;
+            background-color: #222222;
+        }
+
+        #header4{
+            height: 100px;
+            width:290px;
+            float: left;
+            margin: 0 auto;
+            background-color: #222222;
+        }
+
+
+
+
+
+        #content0{
+            height: 50px;
+            width:938px;
+
+            background-color: #FFFFFF;
+
+        }
+
+        .content1{
+            height: 387px;
+            width:938px;
+
+            background-color: #FFFFFF;
+        }
+
+        .content2{
+            height: 50px;
+            width:938px;
+            display:table-cell;
+            font-size:12px;
+            font-height:14px;
+            vertical-align:middle;
+            text-align:center;
+            background-color: #FFFFFF;
+        }
+
+        .content11{
+            height: 387px;
+            width:469px;
+            background-color: #777777;
+            float: left;
+
+        }
+
+        .content12{
+            height: 387px;
+            width:469px;
+            float: left;
+            background-color: #FFFFFF;
+
+
+        }
+
+        ul {
+            height: 100px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            height: 100px;
+            float: left;
+        }
+
+        li div {
+            height: 60px;
+            width: 90px;
+            display: block;
+            color: white;
+            vertical-align: center;
+            text-align: center;
+            padding: 14px 16px;
+            margin: 0 auto;
+            text-decoration: none;
+            background-color: #222222;
+        }
+
+        li div:hover {
+            background-color:  #111;
+            color: #4CAF50;
+            cursor:pointer
+
+        }
+        .content121{
+            border-radius: 30px;
+            border: 2px solid #aaaaaa;
+            padding: 20px;
+            width: 150px;
+            height: 8px;
+            text-align: center;
+            line-height: 8px;
+            color: #aaaaaa
+        }
+
+        .content121:hover{
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            cursor:pointer
+        }
+
+
+
+
+        #footer{
+            height: 300px;
+            width:938px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+        }
+
+        .footer1{
+            background-color: #aaaaaa;
+            width: 50px;
+            height: auto;
+
+        }
+        .footer1:hover{
+            background-color: #2196F3;
+            cursor:pointer
+        }
+    </style>
+    <script>
+
+
+        function goBack()
+        {
+            window.history.back()
+        }
+        function goForward()
+        {
+            window.history.forward()
+        }
+        function f1() {
+            var div1=document.getElementById('content');
+            var div2=document.getElementById('contentSecond');
+            var div3=document.getElementById('contentThree');
+            var div4=document.getElementById('contentFour');
+            var footerdiv=document.getElementById('footer');
+            var parentdiv=document.getElementById('parent');
+            var header311=document.getElementById('header311');
+            var header312=document.getElementById('header312');
+            var header313=document.getElementById('header313');
+            var header314=document.getElementById('header314');
+            div2.style.display="block";
+            div1.style.display="none";
+            div3.style.display="none";
+            div4.style.display="none";
+            parentdiv.insertBefore(div2,footerdiv);
+            header312.style.backgroundColor="#4CAF50";
+            header311.style.backgroundColor="#222222";
+            header313.style.backgroundColor="#222222";
+            header314.style.backgroundColor="#222222";
+
+        }
+        function f0() {
+            var div1=document.getElementById('content');
+            var div2=document.getElementById('contentSecond');
+            var div3=document.getElementById('contentThree');
+            var div4=document.getElementById('contentFour');
+            var footerdiv=document.getElementById('footer');
+            var parentdiv=document.getElementById('parent');
+            var header311=document.getElementById('header311');
+            var header312=document.getElementById('header312');
+            var header313=document.getElementById('header313');
+            var header314=document.getElementById('header314');
+            div1.style.display="block";
+            div2.style.display="none";
+            div3.style.display="none";
+            div4.style.display="none";
+            parentdiv.insertBefore(div2,footerdiv);
+            header311.style.backgroundColor="#4CAF50";
+            header312.style.backgroundColor="#222222";
+            header313.style.backgroundColor="#222222";
+            header314.style.backgroundColor="#222222";
+
+        }
+        function f2() {
+            var div1=document.getElementById('content');
+            var div2=document.getElementById('contentSecond');
+            var div3=document.getElementById('contentThree');
+            var div4=document.getElementById('contentFour');
+            var footerdiv=document.getElementById('footer');
+            var parentdiv=document.getElementById('parent');
+            var header311=document.getElementById('header311');
+            var header312=document.getElementById('header312');
+            var header313=document.getElementById('header313');
+            var header314=document.getElementById('header314');
+            div3.style.display="block";
+            div1.style.display="none";
+            div2.style.display="none";
+            div4.style.display="none";
+            parentdiv.insertBefore(div2,footerdiv);
+            header313.style.backgroundColor="#4CAF50";
+            header311.style.backgroundColor="#222222";
+            header312.style.backgroundColor="#222222";
+            header314.style.backgroundColor="#222222";
+
+        }
+        function f3() {
+            var div1=document.getElementById('content');
+            var div2=document.getElementById('contentSecond');
+            var div3=document.getElementById('contentThree');
+            var div4=document.getElementById('contentFour');
+            var footerdiv=document.getElementById('footer');
+            var parentdiv=document.getElementById('parent');
+            var header311=document.getElementById('header311');
+            var header312=document.getElementById('header312');
+            var header313=document.getElementById('header313');
+            var header314=document.getElementById('header314');
+            div4.style.display="block";
+            div1.style.display="none";
+            div3.style.display="none";
+            div2.style.display="none";
+            parentdiv.insertBefore(div2,footerdiv);
+            header314.style.backgroundColor="#4CAF50";
+            header311.style.backgroundColor="#222222";
+            header313.style.backgroundColor="#222222";
+            header312.style.backgroundColor="#222222";
+
+        }
+    </script>
+</head>
+<body>
+<div id="parent">
+    <div id="header">
+        <div id="header1"></div>
+        <div id="header2" style="line-height: 100px">
+            <span style="height: 100px">
+                Blogin
+            </span>
+            <span style="height: 100px;color: #4CAF50">
+                .
+            </span>
+        </div>
+        <div id="header3">
+            <ul >
+                <li>
+                    <div class="active"  style="line-height: 80px" onclick="f0()" onmousemove="f0()"><span style="height: 80px">Journal</span> </div>
+                    <div class="header31" style="background-color: #4CAF50" id="header311"></div>
+                </li>
+                <li ><div  style="line-height: 80px" onclick="f1()" onmousemove="f1()"><span style="height: 80px" >About</span></div><div class="header31" id="header312"></div></li>
+                <li><div  style="line-height: 80px" onclick="f2()" onmousemove="f2()"><span style="height: 80px">Work</span></div><div class="header31" id="header313"></div></li>
+                <li><div  style="line-height: 80px" onclick="f3()" onmousemove="f3()"><span style="height: 80px">Contact</span></div><div class="header31" id="header314"></div></li>
+            </ul>
+        </div>
+        <div id="header4"></div>
+    </div>
+    <div id="content">
+        <div id="content0" >
+
+        </div>
+        <div class="content1">
+            <div class="content11">
+                <img src="pic1_20.gif" style="width:100%;height:100%">
+            </div >
+            <div class="content12">
+                <div style="height: 100px;font-family:SimHei;font-size: larger;width: 280px">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE</div>
+                <div style="height: 150px;width: 450px">UT enim a d minim veniam,quis nostred exercitation uallamco laboris nisi ut aliquip ex ea commo doconsequat,sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit</div>
+                <div class="content121" >Continue Reading</div>
+            </div>
+        </div>
+        <div class="content1">
+            <div class="content11">
+                <img src="pic1_29.gif" style="width:100%;height:100%">
+            </div >
+            <div class="content12">
+                <div style="height: 100px;font-family:SimHei;font-size: larger;width: 280px">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE</div>
+                <div style="height: 150px;width: 450px">UT enim a d minim veniam,quis nostred exercitation uallamco laboris nisi ut aliquip ex ea commo doconsequat,sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit</div>
+                <div class="content121" >Continue Reading
+                </div>
+            </div>
+        </div>
+        <div class="content1">
+            <div class="content11">
+                <img src="pic1_38.gif" style="width:100%;height:100%">
+            </div >
+            <div class="content12">
+                <div style="height: 100px;font-family:SimHei;font-size: larger;width: 280px">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE</div>
+                <div style="height: 150px;width: 450px">UT enim a d minim veniam,quis nostred exercitation uallamco laboris nisi ut aliquip ex ea commo doconsequat,sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit</div>
+                <div class="content121" >Continue Reading
+                </div>
+            </div>
+        </div>
+        <div class="content2" >
+            <span style="float: left;width: 80px;height: 18px" onclick="goBack()"><- PREVIOUS</span>
+            <span style="float: right;width: 80px;height: 18px" onclick="goForward()">NEXT -></span>
+        </div>
+    </div>
+    <div id="contentSecond" ></div>
+    <div id="contentThree"></div>
+    <div id="contentFour"></div>
+    <div id="footer" style="text-align: center;background-color:#DCDCDC;width:100%;">
+        <div style="height: 120px;line-height: 120px">
+            <span style="font-size: larger">Blogin</span>
+            <span style="color: #4CAF50;font-size: larger">.</span>
+        </div>
+        <div style="height: 60px">© 2014 Blogin.com - All Rights Reserved - Find more free Templates Pixelhint.com</div>
+        <div style="height: 50px">
+        <img src="shouye-.svg" class="footer1" style="margin-right: 20px">
+
+        <img src="guanyuwomen.svg" class="footer1"style="margin-right: 20px">
+
+        <img src="quanbuxiangmu.svg" class="footer1" style="margin-right: 20px">
+
+        <img src="shequzhongxin.svg" class="footer1">
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

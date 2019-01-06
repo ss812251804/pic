@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .div1 {
+            position: relative;
+            width: 100%;
+            height: 1250px;
+        }
+
+        .div1_1 {
+            position: absolute;
+            width: 1300px;
+            height: 1250px;
+            left: 110px;
+
+        }
+
+        .div1_1_1 {
+            position: absolute;
+            width: 100%;
+            height: 70px;
+            left: 0;
+            top: 0;
+            background-color: #ffffff;
+        }
+
+        .div1_1_2 {
+            position: absolute;
+            width: 100%;
+            height: 54px;
+            left: 0;
+            top: 70px;
+            background: linear-gradient(to right, rgb(29, 98, 240), rgb(26, 214, 253));
+        }
+
+        .div1_1_3 {
+            position: absolute;
+            width: 100%;
+            height: 1126px;
+            left: 0;
+            top: 124px;
+            overflow: hidden;
+
+        }
+
+        .one{
+            width:0px;
+            height:0px;
+            border-top:  10px solid transparent;
+            border-left:  20px solid transparent ;
+            border-right:  20px solid #ff9797 ;
+            border-bottom:  10px solid transparent;
+            position: absolute;left: 30px;top: 18px;
+        }
+
+        .two{
+            width:0px;
+            height:0px;
+            border-top:  10px solid transparent;
+            border-left:  20px solid #0cda68;
+            border-right:  20px solid transparent;
+            border-bottom:  10px solid transparent;
+            position: absolute;right: 30px;top: 18px;
+        }
+        .reply{
+            position: absolute;left: 70px;top: 10px;max-width:200px; width:fit-content;height: fit-content; max-height: 500px;background: #ff9797;word-break:break-all;
+        }
+        .send{
+            position: absolute;right: 70px;top: 10px;max-width:200px; width:fit-content;height: fit-content; max-height: 500px;background: #0cda68;word-break:break-all;
+
+        }
+        .reply_img{
+            position:absolute;left: 5px;top: 10px;width: 42px;height: 42px;border-radius: 50%
+
+        }
+        .send_img{
+            position:absolute;right: 5px;top: 10px;width: 42px;height: 42px;border-radius: 50%
+
+        }
+    </style>
+    <script src="echarts.js"></script>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div1_1">
+            <div class="div1_1_1">
+                <div style="position: absolute;left: 65px;top: 15px;width: 114px;height: 40px;border-right: #e7e0e0 1px solid">
+                    <h2 style="line-height: 40px;font-size: 24px">freebie</h2>
+                </div>
+                <div style="position: absolute;left: 200px;top: 29px;font-size: 14px">My Notification</div>
+                <img src="4/circle.png" style="position: absolute;left: 315px;top: 29px;width: 18px;height: 18px;">
+                <div style="position: absolute;left: 320px;top: 30px;font-size: 12px;color: #ffffff;">2</div>
+                <img src="4/arrow.png" style="position: absolute;right: 65px;top: 32px;">
+                <div style="position: absolute;right: 87px;top: 26px;font-size: 12px">My Account</div>
+                <img src="4/circle1.png" style="position: absolute;right: 165px;top: 15px;">
+                <img src="4/user.png" style="position: absolute;right: 179px;top: 27px;">
+                <img src="4/circle.png" style="position: absolute;right: 223px;top: 26px;width: 18px;height: 18px;">
+                <div style="position: absolute;right: 228px;top: 27px;font-size: 12px;color: #ffffff;">2</div>
+                <div style="position: absolute;right: 250px;top: 25px;font-size: 14px">Invites</div>
+            </div>
+            <div class="div1_1_2">
+                <div style="position: absolute;right: 65px;top: 7px;width: 128px;height: 38px;border: #ffffff 1px solid "></div>
+                <div style="position: absolute;right: 202px;top: 7px;width: 168px;height: 38px;border: #ffffff 1px solid "></div>
+                <img src="4/files.png" style="position: absolute;right: 341px;top:19px;">
+                <img src="4/arrow copy.png" style="position: absolute;right: 218px;top:25px;">
+                <img src="4/+.png" style="position: absolute;right: 163px;top:18px;">
+                <div style="position: absolute;right: 237px;top:18px;font-size: 13px;color: #ffffff;">Recent Projects</div>
+                <div style="position: absolute;right: 81px;top:18px;font-size: 13px;color: #ffffff;">new Project</div>
+            </div>
+            <div class="div1_1_3">
+                <div style="position: absolute;left: 685px;bottom: 495px;width: 40px;height: 18px;background: #e4f5ff;border: #b1aeae 1px solid;color: #1267e7">
+                    <sapn>+5%</sapn>
+                </div>
+                <div style="position: absolute;right: 97px;bottom: 495px;width: 40px;height: 18px;background: #fdfdff;border: #b1aeae 1px solid;color: #b1aeae">
+                        <sapn>+5%</sapn>
+                </div>
+                <div style="position: absolute;right: 96px;top: 57px;width: 90px;height: 40px;background: #27bdff"></div>
+                <div style="position: absolute;right: 202px;top: 57px;background: #b8e8ff;width: 60px;height: 40px"></div>
+                <img src="4/settings-alt.png" style="position: absolute;right: 234px;top: 69px;">
+                <img src="4/arrow copy 2.png" style="position: absolute;right: 217px;top: 72px;">
+                <img src="4/share.png" style="position: absolute;right: 111px;top: 70px;">
+                <div style="position: absolute;right: 135px;top: 67px;color: #ffffff">Share</div>
+                <div id="d1" style="position: absolute;width: 935px;height: 277px;left: 297px;top:37px;border: #b1aeae 1px solid">
+
+                </div>
+                <div id="d2" style="position: absolute;width: 935px;height: 228px;left: 297px;top:316px;border: #b1aeae 1px solid">
+                    <div id="d21" style="float: left;width: 312px;height: 100%;"></div>
+                    <div id="d22" style="float: left;width: 312px;height: 100%;"></div>
+                    <div id="d23" style="float: left;width: 311px;height: 100%;"></div>
+                </div>
+                <div id="d3" style="position: absolute;width: 453px;height: 241px;left: 297px;top:578px;border: #b1aeae 1px solid"></div>
+                <div id="d4" style="position: absolute;width: 453px;height: 241px;left: 781px;top:578px;border: #b1aeae 1px solid"></div>
+                <div style="position:absolute;width: 202px;height: 40px;background: #ebf7ff;left: 65px;top: 36px;"></div>
+                <img src="4/cloud.png" style="position:absolute;width: 16px;height: 12px;left: 85px;top: 50px;">
+                <div style="position:absolute;left: 108px;top: 45px;">Let's go started</div>
+                <div style="position:absolute;left: 65px;top: 100px;color: rgb(185, 190, 190);">GENERAL</div>
+                <img src="4/meter.png" style="position:absolute;left: 73px;top: 133px;">
+                <div style="position:absolute;left: 100px;top: 129px;color: rgb(27,184,250);">Dashboard / Projects</div>
+                <img src="4/mails.png" style="position:absolute;left: 73px;top: 170px;">
+                <div style="position:absolute;left: 100px;top: 167px;color: rgb(102,102,102);">Messaging</div>
+                <img src="4/circle2.png" style="position:absolute;left: 225px;top: 170px;">
+                <div style="position:absolute;left: 229px;top: 169px;color: rgb(247, 241, 241);font-size: 14px">23</div>
+                <img src="4/calculator.png" style="position:absolute;left: 73px;top: 207px;">
+                <div style="position:absolute;left: 100px;top: 204px;color: rgb(102,102,102);">Billing</div>
+
+                <div style="position:absolute;width: 200px;height: 38px;background:#f7faff ;left: 65px;top: 253px;border: #494848 1px solid;text-align: center">
+                    <div style="line-height: 40px">24/7 Help</div>
+                </div>
+                <div style="position:absolute;width: 200px;height: 153px;background:#f7faff ;left: 65px;top: 293px;border: #494848 1px solid">
+                    <img src="4/Call in.png" style="position: absolute;left: 23px;top: 19px">
+                    <div style="position: absolute;left: 62px;font-size: 10px;top: 15px">Call us any time</div>
+                    <div style="position: absolute;left: 62px;font-size: 15px;top: 25px">(111) 123-4567</div>
+                    <img src="4/news.png" style="position: absolute;left: 28px;top: 60px">
+                    <div style="position: absolute;left: 62px;font-size: 13px;top: 60px">Learning Center</div>
+                    <div style="position: absolute;width: 170px;height: 40px;left: 15px;top: 98px;background: rgb(27,177,98)"></div>
+                    <img src="4/mail.png" style="position: absolute;left: 28px;top: 110px">
+                    <div style="position: absolute;left: 62px;font-size: 13px;top: 110px;color: #ffffff;">Project
+                        manager</div>
+
+                </div>
+                <div style="position:absolute;left: 65px;top: 477px;color: rgb(185, 190, 190);">USERS (4)</div>
+
+                <img src="4/Layer 8.png" style="position:absolute;left: 65px;top: 508px;width: 30px;height: 30px;border-radius: 50%">
+                <div style="position:absolute;left: 105px;top: 507px;font-size: 14px">Jawad S</div>
+                <img src="4/tie-profile.png" style="position:absolute;left: 105px;top: 526px;">
+                <div style="position:absolute;left: 115px;top: 523px;font-size: 12px;color: rgb(153,153,153);">UI
+                    Designer</div>
+                <img src="4/Online.png" style="position:absolute;left: 239px;top: 519px;">
+
+                <img src="4/Layer 7.png" style="position:absolute;left: 65px;top: 563px;width: 30px;height: 30px;border-radius: 50%">
+                <div style="position:absolute;left: 105px;top: 562px;font-size: 14px">Edy W.</div>
+                <img src="4/tie-profile.png" style="position:absolute;left: 105px;top: 581px;">
+                <div style="position:absolute;left: 115px;top: 578px;font-size: 12px;color: rgb(153,153,153);">UI
+                    Designer</div>
+                <img src="4/Idle.png" style="position:absolute;left: 239px;top: 574px;">
+
+                <img src="4/Layer 9.png" style="position:absolute;left: 65px;top: 618px;width: 30px;height: 30px;border-radius: 50%">
+                <div style="position:absolute;left: 105px;top: 617px;font-size: 14px">Qamar Loop</div>
+                <img src="4/tie-profile.png" style="position:absolute;left: 105px;top: 636px;">
+                <div style="position:absolute;left: 115px;top: 633px;font-size: 12px;color: rgb(153,153,153);">Front-end
+                    developer</div>
+                <img src="4/Idle1.png" style="position:absolute;left: 239px;top: 629px;">
+
+                <img src="4/Layer 10.png" style="position:absolute;left: 65px;top: 673px;width: 30px;height: 30px;border-radius: 50%">
+                <div style="position:absolute;left: 105px;top: 672px;font-size: 14px">Bilal Siddique</div>
+                <img src="4/tie-profile.png" style="position:absolute;left: 105px;top: 691px;">
+                <div style="position:absolute;left: 115px;top: 688px;font-size: 12px;color: rgb(153,153,153);">Ruby
+                    Developer</div>
+                <img src="4/Busy.png" style="position:absolute;left: 239px;top: 684px;">
+
+                <div style="position: absolute;width: 281px;height: 381px;bottom: 0px;right: 66px;border: #494848 1px solid">
+                    <div id="chat1" style="height: 49px;width: 100%;border-bottom: #494848 1px solid;background:rgba(85,85,85,0.96)"
+                        onclick="f1()">
+                        <div style="position: absolute;font-size: 14px;left: 13px;top:16px;color: #ffffff;">Qamar Loop</div>
+                        <img src="4/_.png" style="position: absolute;left: 233px;top: 28px;" onclick="f3()">
+                        <img src="4/Close.png" style="position: absolute;left: 264px;top: 18px;" onclick="f6(this)">
+                    </div>
+                    <div style="height: 24px;width: 100%;border-bottom: #494848 1px solid;background: #ffffff">
+                        <img src="4/settings-alt1.png" style="position: absolute;right: 5px;top: 54px;">
+                    </div>
+                    <div id="cont1" style="height: 267px;width: 100%;border-bottom: #494848 1px solid;position: relative;overflow: auto;">
+                        <div style="position: relative">
+                            <img class="reply_img" src="4/Layer 7.png">
+                            <div class="one"></div>
+                            <div class="reply">Hey Qamar, How are you doing?</div>
+                        </div>
+                        <div style="position: relative;top: 70px">
+                            <img class="send_img" src="4/Layer 9.png">
+                            <div class="two"></div>
+                            <div class="send">Oh hi, did you see that cloud
+                                app that i send you via dropbox? </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div style="height: 40px;width: 100%;">
+                        <img src="4/smiley.png" style="position: absolute;left: 12px;bottom: 10px;">
+                        <input type="text" id="txt" style="position: absolute;left: 33px;bottom: 8px">
+                        <img src="4/Btn.png" style="position: absolute;right: 5px;bottom: 3px;">
+                        <div id="send" style="position: absolute;font-size: 14px;right: 20px;bottom: 8px;color: #ffffff;"
+                            onclick="f5()">Send</div>
+                        </img>
+                    </div>
+
+                    <div style="position: absolute;width: 281px;height: 381px;bottom: -333px;right: 381px;border: #494848 1px solid">
+                        <div id="chat2" style="height: 49px;width: 100%;border-bottom: #494848 1px solid;background:#27bdff"
+                            onclick="f2()">
+                            <div style="position: absolute;font-size: 14px;left: 13px;top:16px;color: #ffffff;">Bilal
+                                Sidique</div>
+                            <img src="4/_.png" style="position: absolute;left: 233px;top: 28px;" onclick="f4()">
+                            <img src="4/Close.png" style="position: absolute;left: 264px;top: 18px;" onclick="f6(this)">
+                        </div>
+                        <div style="height: 24px;width: 100%;border-bottom: #494848 1px solid;background: #ffffff">
+                            <img src="4/settings-alt1.png" style="position: absolute;right: 5px;top: 54px;">
+                        </div>
+                        <div style="height: 267px;width: 100%;border-bottom: #494848 1px solid"></div>
+                        <div style="height: 40px;width: 100%;">
+                            <img src="4/smiley.png" style="position: absolute;left: 12px;bottom: 10px;">
+                            <input style="position: absolute;left: 33px;bottom: 8px">
+                            <img src="4/Btn.png" style="position: absolute;right: 5px;bottom: 3px;">
+                            <div style="position: absolute;font-size: 14px;right: 20px;bottom: 8px;color: #ffffff;">Send</div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <script>
+            function f1() {
+                var chat1 = document.getElementById('chat1');
+                var parentNode = chat1.parentNode;
+                if (parentNode.style.bottom == "-333px") {
+                    parentNode.style.bottom = "0px";
+                    chat1.style.background = "rgba(85,85,85,0.96)";
+                }
+            }
+
+            function f2() {
+                var chat2 = document.getElementById('chat2');
+                var parentNode = chat2.parentNode;
+                if (parentNode.style.bottom == "-333px") {
+                    parentNode.style.bottom = "0px";
+                    chat2.style.background = "rgba(85,85,85,0.96)";
+                }
+            }
+
+            function f3() {
+
+                var chat1 = document.getElementById('chat1');
+
+                var parentNode = chat1.parentNode;
+
+                if (parentNode.style.bottom == "0px") {
+
+                    parentNode.style.bottom = "-333px";
+                    chat1.style.background = "#27bdff";
+                    event.stopPropagation();
+
+
+
+                }
+            }
+
+            function f4() {
+
+                var chat2 = document.getElementById('chat2');
+
+                var parentNode = chat2.parentNode;
+
+                if (parentNode.style.bottom == "0px") {
+
+                    parentNode.style.bottom = "-333px";
+                    chat2.style.background = "#27bdff";
+                    event.stopPropagation();
+
+
+
+                }
+            }
+
+            var temp = 140;
+            function f5() {
+
+                var txt = document.getElementById("txt");
+                var send = document.getElementById("send");
+                var cont1 = document.getElementById("cont1");
+
+                if (txt.value.length != 0) {
+                    var str = "<div style='position: relative;top: " + temp + "px'>" + "<img class='send_img' src='4/Layer 9.png'>" +
+                        "<div class='two'></div>" +
+                        "<div class='send'>" + txt.value + "</div>" + "</div>";
+                    cont1.innerHTML = cont1.innerHTML + str;
+                    temp = temp + 70;
+                } else {
+                    return false;
+                }
+                cont1.scrollTop = cont1.scrollHeight;
+            }
+
+
+            function f6(Obj) {
+                Obj.parentNode.parentNode.parentNode.removeChild(Obj.parentNode.parentNode);
+                event.stopPropagation();
+            }
+
+
+            var myChart1 = echarts.init(document.getElementById('d1'));
+
+            // 指定图表的配置项和数据
+            myChart1.title = '折线图';
+
+            var option1 = {
+                title: [
+
+                    {
+
+                        text: 'Revenues',
+                        left: 35,
+                        top: 30,
+                        textStyle: {
+                            fontSize: 18
+                        }
+                    },
+                    {
+
+                        text: '$1,500.00',
+                        left: 35,
+                        top: 100,
+                        textStyle: {
+                            fontSize: 12
+                        }
+                    },
+                    {
+
+                        text: '$750.00',
+                        left: 35,
+                        top: 170,
+                        textStyle: {
+                            fontSize: 12
+                        }
+                    },
+                    {
+
+                        text: '$0.00',
+                        left: 35,
+                        top: 240,
+                        textStyle: {
+                            fontSize: 12
+                        }
+                    },
+                    {
+
+                        text: 'Mar 02',
+                        left: 235,
+                        top: 240,
+                        textStyle: {
+                            fontSize: 12
+                        }
+                    },
+                    {
+
+                        text: 'Mar 09',
+                        left: 435,
+                        top: 240,
+                        textStyle: {
+                            fontSize: 12
+                        }
+                    },
+                    {
+
+                        text: 'Mar 16',
+                        left: 635,
+                        top: 240,
+                        textStyle: {
+                            fontSize: 12
+                        }
+                    },
+                    {
+
+                        text: 'Mar 23',
+                        left: 835,
+                        top: 240,
+                        textStyle: {
+                            fontSize: 12
+                        }
+                    },
+
+
+
+
+
+
+
+                ],
+
+                grid: {
+                    left: '-3%',
+                    right: '-2%',
+                    top: '30%',
+                    bottom: '0%',
+                    containLabel: true
+
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'],
+
+                    axisLabel: {
+                        show: false //这行代码控制着坐标轴x轴的文字是否显示
+                    },
+                    splitLine: {
+                        show: true, // 网格线是否显示
+                        // 改变样式
+                        lineStyle: {
+                            color: '#b6aeae', // 修改网格线颜色
+
+                        }
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#fff', // x坐标轴的轴线颜色
+                            width: 0,//这里是坐标轴的宽度,为0就是不显示
+
+                        }
+                    },
+                },
+                yAxis: {
+                    type: 'value',
+                    splitNumber: 4,
+                    axisLabel: {
+                        show: false //这行代码控制着坐标轴x轴的文字是否显示
+                    },
+                    splitLine: {
+                        show: true, // 网格线是否显示
+                        // 改变样式
+                        lineStyle: {
+                            color: '#b6aeae',// 修改网格线颜色
+                            type: 'dotted'
+                        }
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#fff', // x坐标轴的轴线颜色
+                            width: 0 //这里是坐标轴的宽度,为0就是不显示
+                        }
+                    },
+                },
+                series: [{
+                    symbolSize: 10,
+                    markPoint: {
+                        data: [
+                            { type: 'max', symbol: 'circle', symbolSize: 14, },
+
+                        ],
+                        label: {
+                            show: false
+                        },
+
+
+                    },
+
+                    data: [3, 4, 2, 5, 4, 6, 7, 4, 6, 5, 6, 6, 1],
+                    type: 'line',
+                    itemStyle: {
+                        normal: {
+                            color: "rgb(26,214,253)",
+                            lineStyle: {
+                                color: "rgb(26,214,253)"
+                            }
+                        }
+                    },
+                    areaStyle: {
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [{
+                                offset: 0, color: 'rgb(27,184,250)' // 0% 处的颜色
+                            }, {
+                                offset: 1, color: 'white' // 100% 处的颜色
+                            }],
+                            globalCoord: false // 缺省为 false
+                        }
+                    }
+
+                }]
+            };
+
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart1.setOption(option1);
+
+
+            // 基于准备好的dom，初始化echarts实例
+            var myChart21 = echarts.init(document.getElementById('d21'));
+
+            // 指定图表的配置项和数据
+            myChart21.title = '环形图';
+
+            var option21 = {
+                title: [{
+                    text: '3.123.121',
+                    left: 110,
+                    top: 190,
+
+                    textStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    subtext: 'Click today',
+                    left: 110,
+                    top: 155,
+
+                    subtextStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    subtext: '75%',
+                    left: 120,
+                    top: 65,
+
+                    subtextStyle: {
+                        fontSize: 30,
+                        color: 'rgb(250,114,82)'
+                    },
+
+                },
+                ],
+
+                animation: false,
+                series: [
+                    {
+                        name: '访问来源',
+                        type: 'pie',
+                        radius: ['50%', '60%'],
+                        center: ['50%', '40%'],
+                        avoidLabelOverlap: true,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            }
+
+                        },
+                        data: [
+                            { value: 75 },
+                            { value: 25 }
+
+                        ],
+
+                    }
+                ],
+                color: ['rgb(250,114,82)', '#f5f8f9']
+            };
+
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart21.setOption(option21);
+
+            // 基于准备好的dom，初始化echarts实例
+            var myChart22 = echarts.init(document.getElementById('d22'));
+
+            // 指定图表的配置项和数据
+            myChart22.title = '环形图';
+
+            var option22 = {
+                title: [{
+                    text: '743.35',
+                    left: 115,
+                    top: 190,
+
+                    textStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    subtext: 'Conversions today',
+                    left: 75,
+                    top: 155,
+
+                    subtextStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    subtext: '29%',
+                    left: 120,
+                    top: 65,
+
+                    subtextStyle: {
+                        fontSize: 30,
+                        color: 'rgb(27,177,98)'
+                    },
+
+                },
+                ],
+
+                animation: false,
+                series: [
+                    {
+                        name: '访问来源',
+                        type: 'pie',
+                        radius: ['50%', '60%'],
+                        center: ['50%', '40%'],
+                        avoidLabelOverlap: true,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            }
+
+                        },
+                        data: [
+                            { value: 29 },
+                            { value: 71 }
+
+                        ],
+
+                    }
+                ],
+                color: ['rgb(27,177,98)', '#f5f8f9']
+            };
+
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart22.setOption(option22);
+
+
+            // 基于准备好的dom，初始化echarts实例
+            var myChart23 = echarts.init(document.getElementById('d23'));
+
+            // 指定图表的配置项和数据
+            myChart23.title = '环形图';
+
+            var option23 = {
+                title: [{
+                    text: '1.573.989',
+                    left: 115,
+                    top: 190,
+
+                    textStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    subtext: 'Revenue today',
+                    left: 90,
+                    top: 155,
+
+                    subtextStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    subtext: '64%',
+                    left: 120,
+                    top: 65,
+
+                    subtextStyle: {
+                        fontSize: 30,
+                        color: 'rgb(29,98,240)'
+                    },
+
+                },
+                ],
+
+                animation: false,
+                series: [
+                    {
+                        name: '访问来源',
+                        type: 'pie',
+                        radius: ['50%', '60%'],
+                        center: ['50%', '40%'],
+                        avoidLabelOverlap: true,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            }
+
+                        },
+                        data: [
+                            { value: 64 },
+                            { value: 36 }
+
+                        ],
+
+                    }
+                ],
+                color: ['rgb(29,98,240)', '#f5f8f9']
+            };
+
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart23.setOption(option23);
+
+            // 基于准备好的第四个dom，初始化echarts实例
+            var myChart3 = echarts.init(document.getElementById('d3'));
+
+            // 指定图表的配置项和数据
+            myChart3.title = '柱状图';
+
+            var option3 = {
+
+                title: [{
+                    text: 'Transactions',
+                    left: 29,
+                    top: 31,
+
+                    textStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    text: 'Mar 02',
+                    left: 40,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+
+                {
+                    text: 'Mar 09',
+                    left: 140,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+
+                {
+                    text: 'Mar 16',
+                    left: 240,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+                {
+                    text: 'Mar 23',
+                    left: 340,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+                {
+                    text: '1548',
+                    left: 327,
+                    top: 32,
+
+                    textStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                
+                {
+                    subtext: '100',
+                    left: 10,
+                    top: 75,
+
+                    subtextStyle: {
+                        fontSize: 14,
+                        
+                    },
+
+                },
+                {
+                    subtext: '50',
+                    left: 10,
+                    top: 130,
+
+                    subtextStyle: {
+                        fontSize: 14,
+                        
+                    },
+
+                },
+                {
+                    subtext: '0',
+                    left: 10,
+                    top: 180,
+
+                    subtextStyle: {
+                        fontSize: 14,
+                        
+                    },
+
+                },
+                ],
+                
+                color: ['rgb(29,98,240)'],
+                animation: false,
+                grid: {
+                    left: '10%',
+                    right: '10%',
+                    top: '30%',
+                    bottom: '15%',
+                    containLabel: true
+                },
+
+                xAxis: [
+                    {
+                        type: 'category',
+                        axisLabel: {
+                            show: false //这行代码控制着坐标轴x轴的文字是否显示
+                        },
+                        splitLine: {
+                            show: true, // 网格线是否显示
+                            // 改变样式
+                            lineStyle: {
+                                color: '#b6aeae', // 修改网格线颜色
+
+                            }
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#fff', // x坐标轴的轴线颜色
+                                width: 0,//这里是坐标轴的宽度,为0就是不显示
+
+                            }
+                        },
+
+
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value',
+                        splitNumber: 3,
+                        axisLabel: {
+                            show: false //这行代码控制着坐标轴x轴的文字是否显示
+                        },
+                        splitLine: {
+                            show: true, // 网格线是否显示
+                            // 改变样式
+                            lineStyle: {
+                                color: '#b6aeae',// 修改网格线颜色
+                                type: 'dotted'
+                            }
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#fff', // x坐标轴的轴线颜色
+                                width: 0 //这里是坐标轴的宽度,为0就是不显示
+                            }
+                        },
+                    }
+                ],
+                series: [
+
+                    {
+
+                        type: 'bar',
+                        itemStyle: {
+                            normal: {
+                                color: '#ddd'
+                            }
+                        },
+                        barWidth: '35%',
+                        barGap: '-100%',
+                        data: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+                    },
+                    {
+
+                        type: 'bar',
+                        barWidth: '35%',
+                        data: [30, 40, 80, 15, 100, 90, 20, 35, 48, 60, 20, 10, 15, 25, 66, 44, 55, 33, 24, 77, 65, 44, 85, 22, 33, 44, 66, 71, 23, 21, 34, 22, 10]
+                    },
+                ]
+            };
+
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart3.setOption(option3);
+
+
+            // 基于准备好的第四个dom，初始化echarts实例
+            var myChart4 = echarts.init(document.getElementById('d4'));
+
+            // 指定图表的配置项和数据
+            myChart4.title = '柱状图';
+
+            var option4 = {
+                
+                title: [{
+                    text: 'Transactions',
+                    left: 29,
+                    top: 31,
+
+                    textStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                {
+                    text: 'Mar 02',
+                    left: 40,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+
+                {
+                    text: 'Mar 09',
+                    left: 140,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+
+                {
+                    text: 'Mar 16',
+                    left: 240,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+                {
+                    text: 'Mar 23',
+                    left: 340,
+                    bottom: 10,
+
+                    textStyle: {
+                        fontSize: 14
+                    },
+
+                },
+                {
+                    text: '943',
+                    left: 327,
+                    top: 32,
+
+                    textStyle: {
+                        fontSize: 18
+                    },
+
+                },
+                
+                {
+                    subtext: '100',
+                    left: 10,
+                    top: 75,
+
+                    subtextStyle: {
+                        fontSize: 14,
+                        
+                    },
+
+                },
+                {
+                    subtext: '50',
+                    left: 10,
+                    top: 130,
+
+                    subtextStyle: {
+                        fontSize: 14,
+                        
+                    },
+
+                },
+                {
+                    subtext: '0',
+                    left: 10,
+                    top: 180,
+
+                    subtextStyle: {
+                        fontSize: 14,
+                        
+                    },
+
+                },
+                ],
+                
+                color: ['rgb(29,98,240)'],
+                animation: false,
+                grid: {
+                    left: '10%',
+                    right: '10%',
+                    top: '30%',
+                    bottom: '15%',
+                    containLabel: true
+                },
+
+                xAxis: [
+                    {
+                        type: 'category',
+                        axisLabel: {
+                            show: false //这行代码控制着坐标轴x轴的文字是否显示
+                        },
+                        splitLine: {
+                            show: true, // 网格线是否显示
+                            // 改变样式
+                            lineStyle: {
+                                color: '#b6aeae', // 修改网格线颜色
+
+                            }
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#fff', // x坐标轴的轴线颜色
+                                width: 0,//这里是坐标轴的宽度,为0就是不显示
+
+                            }
+                        },
+
+
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value',
+                        splitNumber: 3,
+                        axisLabel: {
+                            show: false //这行代码控制着坐标轴x轴的文字是否显示
+                        },
+                        splitLine: {
+                            show: true, // 网格线是否显示
+                            // 改变样式
+                            lineStyle: {
+                                color: '#b6aeae',// 修改网格线颜色
+                                type: 'dotted'
+                            }
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#fff', // x坐标轴的轴线颜色
+                                width: 0 //这里是坐标轴的宽度,为0就是不显示
+                            }
+                        },
+                    }
+                ],
+                series: [
+
+                    {
+
+                        type: 'bar',
+                        itemStyle: {
+                            normal: {
+                                color: '#ddd'
+                            }
+                        },
+                        barWidth: '35%',
+                        barGap: '-100%',
+                        data: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+                    },
+                    {
+
+                        type: 'bar',
+                        barWidth: '35%',
+                        data: [30, 40, 80, 15, 100, 90, 20, 35, 48, 60, 20, 10, 15, 25, 66, 44, 55, 33, 24, 77, 65, 44, 85, 22, 33, 44, 66, 71, 23, 21, 34, 22, 10]
+                    },
+                ]
+            };
+
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart4.setOption(option4);
+
+
+
+
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1 {
+            width: 100%;
+            height: 100px;
+            background: #ffffff;
+        }
+
+        .div2 {
+            width: 100%;
+            height: 1600px;
+            background: #f5f8f9;
+            position: relative;
+        }
+
+        .div3 {
+            width: 100%;
+            height: 250px;
+            background: #202124;
+            position: relative;
+        }
+        .div4 {
+            width: 100%;
+            height: 40px;
+            background: #0f0f0f;
+        }
+
+        .div21 {
+            width: 1140px;
+            height: 1428px;
+            background: #f5f8f9;
+            position: absolute;
+            left: 190px;
+            top: 85px;
+        }
+
+        .div211 {
+            width: 1140px;
+            height: 100px;
+            background: #f5f8f9;
+            position: absolute;
+
+        }
+
+        .div212 {
+            width: 1140px;
+            height: 387px;
+            background: #ffffff;
+            position: absolute;
+            top: 100px;
+
+        }
+
+        .div213 {
+            width: 560px;
+            height: 450px;
+            background: #ffffff;
+            position: absolute;
+        }
+
+
+
+        .div2121 {
+            width: 160px;
+            height: 160px;
+
+            position: absolute;
+            top: 114px;
+
+        }
+
+        .div2122 {
+            width: 370px;
+            height: 210px;
+            position: absolute;
+            top: 68px;
+            left: 721px;
+
+
+        }
+
+        .div211_h3{
+            position: absolute;
+            top: 26px;
+            
+            padding-bottom: 10px;
+
+        }
+    </style>
+    <script src="echarts.js"></script>
+</head>
+
+<body>
+    <div class="div1">
+        <img src="3/Rectangle 99.png" style="position: absolute;width: auto;height: auto;left: 190px;top: 35px">
+        <img src="3/Rectangle 99 copy.png" style="position: absolute;width: auto;height: auto;left: 190px;top: 35px">
+        <div style="position: absolute;width: auto;height: auto;left: 200px;top: 40px;color: #ffffff;font-size: smaller">BROADCAST</div>
+        <img src="3/square.png" style="position: absolute;width: auto;height: auto;right: 190px;top: 35px">
+        <div style="position: absolute;width: auto;height: auto;right: 220px;top: 45px;color: #ffffff;font-size: smaller">Log Out</div>
+        <img src="3/bell.png" style="position: absolute;width: auto;height: auto;right: 340px;top: 45px">
+        <img src="3/settings.png" style="position: absolute;width: auto;height: auto;right: 380px;top: 45px">
+    </div>
+    <div class="div2">
+        <div class="div21">
+            <div class="div211">
+                <h2 style="position: absolute;">Audience Overviews</h2>
+                <div style="position: absolute;top: 30px">Roseville,CA</div>
+                <h5 class="div211_h3" style="right: 0;">SETTINGS</h5>
+                <h5 class="div211_h3" style="right: 100px;">MAILBOX</h5>
+                <h5 class="div211_h3" style="right: 200px;">CALENDAR</h5>
+                <h5 class="div211_h3" style="right: 300px;">PROJECTS</h5>
+                <h5 class="div211_h3" style="right: 400px;border-bottom: #93999b 1px solid">DASHBOARO</h5>
+            </div>
+            <div class="div212">
+                <div style="position: absolute;left: 70px;top: 50px;">Pageviews by users(Past 24 hours)</div>
+                <div style="position: absolute;left: 70px;top: 300px;">Total / Out of 6,356 views</div>
+                <div style="position: absolute;left: 750px;top: 300px;">Applicants a Day</div>
+                <div id="d1" class="div2121" style="left: 50px"></div>
+                <div id="d2" class="div2121" style="left: 261px"></div>
+                <div id="d3" class="div2121" style="left: 471px"></div>
+                <div id="d4" class="div2122"></div>
+            </div>
+            <div id="d5" class="div213" style="top: 507px;left: 0;"></div>
+            <div class="div213" style="top: 507px;right: 0">
+                <div id="d6" style="width: 463px;height: 351px;left: 48px;top: 50px;position: absolute">
+
+
+                </div>
+                <img src="3/settings.png" style="position: absolute;width: auto;height: auto;right: 50px;top: 65px">
+            </div>
+            <div id="d7" class="div213" style="bottom: 0;left: 0;">
+                
+            </div>
+            <div id="d8" class="div213" style="bottom: 0;right: 0">
+                <div style="height: 108px;border-bottom: #f5f8f9 2px solid">
+                    <div style="position: absolute;;left: 45px;top: 45px">Support Requests</div>
+                    <div style="position: absolute;;right: 50px;top: 35px;border: #f5f8f9 2px solid;padding: 10px;">View ALL</div>
+                </div>
+                <div style="height: 340px;width: 100%;">
+                    <h4 style="position: absolute;left: 49px;top: 132px">TIME</h4>
+                    <div style="position: absolute;left: 49px;top: 182px">9:45pm</div>
+                    <div style="position: absolute;left: 49px;top: 232px">9:45pm</div>
+                    <div style="position: absolute;left: 49px;top: 282px">9:45pm</div>
+                    <div style="position: absolute;left: 49px;top: 332px">9:45pm</div>
+                    <div style="position: absolute;left: 49px;top: 382px">9:45pm</div>
+                    <h4 style="position: absolute;left: 150px;top: 132px">USER NAME</h4>
+                    <div style="position: absolute;left: 150px;top: 182px">info@desin.com</div>
+                    <div style="position: absolute;left: 150px;top: 232px">info@desin.com</div>
+                    <div style="position: absolute;left: 150px;top: 282px">info@desin.com</div>
+                    <div style="position: absolute;left: 150px;top: 332px">info@desin.com</div>
+                    <div style="position: absolute;left: 150px;top: 382px">info@desin.com</div>
+                    <h4 style="position: absolute;right: 50px;top: 132px">STATUS</h4>
+                    <img src="3/square copy.png" style="position: absolute;right: 50px;top:178px">
+                    <div style="position: absolute;right: 57px;top: 182px;color: #ffffff;">solved</div>
+                    <img src="3/square copy.png" style="position: absolute;right: 50px;top:228px">
+                    <div style="position: absolute;right: 57px;top: 232px;color: #ffffff;">solved</div>
+                    <img src="3/square copy.png" style="position: absolute;right: 50px;top:278px">
+                    <div style="position: absolute;right: 57px;top: 282px;color: #ffffff;">solved</div>
+                    <img src="3/square copy1.png" style="position: absolute;right: 50px;top:328px">
+                    <div style="position: absolute;right: 62px;top: 332px;color: #ffffff;">open</div>
+                    <img src="3/square copy1.png" style="position: absolute;right: 50px;top:378px">
+                    <div style="position: absolute;right: 62px;top: 382px;color: #ffffff;">open</div>
+                    <div></div>
+                </div>
+                
+            </div>
+            <img src="3/settings.png" style="position: absolute;width: auto;height: auto;left: 500px;top: 1015px;">
+            <img src="3/indicator.png" style="position: absolute;width: auto;height: auto;left: 228px;top: 1113px;">
+        </div>
+    </div>
+    <div class="div3">
+        <img src="3/Rectangle 99.png" style="position: absolute;width: auto;height: auto;left: 190px;top: 80px">
+        <img src="3/Rectangle 99 copy.png" style="position: absolute;width: auto;height: auto;left: 190px;top: 80px">
+        <div style="position: absolute;width: auto;height: auto;left: 200px;top: 85px;color: #ffffff;font-size: smaller">BROADCAST</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 370px;top: 70px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">NEWS</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 570PX;top: 70px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">SPORT</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 770px;top: 70px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">WEATHER</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 970px;top: 70px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">FUTURE</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 1170px;top: 70px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">TRAVEL</div>
+
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 370px;top: 100px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">NEWS</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 570PX;top: 100px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px solid">SPORT</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 770px;top: 100px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">WEATHER</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 970px;top: 100px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">FUTURE</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 1170px;top: 100px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">TRAVEL</div>
+
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 370px;top: 130px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">NEWS</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 570PX;top: 130px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">SPORT</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 770px;top: 130px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">WEATHER</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 970px;top: 130px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">FUTURE</div
+            >
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 370px;top: 160px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">NEWS</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 570PX;top: 160px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">SPORT</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 770px;top: 160px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">WEATHER</div>
+        <div class="div3_1"style="position: absolute;width: auto;height: auto;left: 970px;top: 160px;font-size: smaller;color: #ffffff;border-bottom: #f5f8f9 1px ">FUTURE</div>
+  
+        
+    </div>
+    <div class="div4"></div>
+    <script>
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('d1'));
+
+        // 指定图表的配置项和数据
+        myChart.title = '环形图';
+
+        var option = {
+            title: {
+                text: '2,214',
+                left: 45,
+                top: 55,
+                subtext: 'APPLICANTS',
+                textStyle: {
+                    fontSize: 20
+                },
+                subtextStyle: {
+                    fontSize: 10,
+                }
+            },
+            animation: false,
+            series: [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: ['60%', '70%'],
+                    avoidLabelOverlap: true,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        }
+
+                    },
+                    data: [
+                        { value: 75 },
+                        { value: 25 }
+
+                    ],
+
+                }
+            ],
+            color: ['green', '#f5f8f9']
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+
+        // 基于准备好的第二个dom，初始化echarts实例
+        var myChart2 = echarts.init(document.getElementById('d2'));
+
+        // 指定图表的配置项和数据
+        myChart2.title = '环形图';
+
+        var option2 = {
+            title: {
+                text: '1,467',
+                left: 45,
+                top: 55,
+                subtext: 'INTERVIEWS',
+                textStyle: {
+                    fontSize: 20
+                },
+                subtextStyle: {
+                    fontSize: 10,
+                }
+            },
+            animation: false,
+            series: [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: ['60%', '70%'],
+                    avoidLabelOverlap: true,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        }
+
+                    },
+                    data: [
+                        { value: 75 },
+                        { value: 25 }
+
+                    ],
+
+                }
+            ],
+            color: ['blue', '#f5f8f9']
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart2.setOption(option2);
+
+        // 基于准备好的第三个dom，初始化echarts实例
+        var myChart3 = echarts.init(document.getElementById('d3'));
+
+        // 指定图表的配置项和数据
+        myChart3.title = '环形图';
+
+        var option3 = {
+            title: {
+                text: '  296',
+                left: 45,
+                top: 55,
+                subtext: 'FORWARDS',
+                textStyle: {
+                    fontSize: 20
+                },
+                subtextStyle: {
+                    fontSize: 10,
+                }
+            },
+            animation: false,
+            series: [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: ['60%', '70%'],
+                    avoidLabelOverlap: true,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        }
+
+                    },
+                    data: [
+                        { value: 75 },
+                        { value: 25 }
+
+                    ],
+
+                }
+            ],
+            color: ['orange ', '#f5f8f9']
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart3.setOption(option3);
+
+        // 基于准备好的第四个dom，初始化echarts实例
+        var myChart4 = echarts.init(document.getElementById('d4'));
+
+        // 指定图表的配置项和数据
+        myChart4.title = '柱状图';
+
+        var option4 = {
+            color: ['green'],
+            animation: false,
+            grid: {
+                left: '0%',
+                right: '0%',
+                top: '5%',
+                bottom: '5%',
+                containLabel: true
+            },
+
+            xAxis: [
+                {
+                    type: 'category',
+
+
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            series: [
+                {
+
+                    type: 'bar',
+                    barWidth: '35%',
+                    data: [30, 40, 80, 15, 100, 90, 20, 35, 48, 60]
+                }
+            ]
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart4.setOption(option4);
+
+
+        // 基于准备好的第五个dom，初始化echarts实例
+        var myChart5 = echarts.init(document.getElementById('d5'));
+
+        // 指定图表的配置项和数据
+        myChart5.title = '饼图';
+
+        var option5 = {
+            title: [
+                {
+
+                    subtext: 'Pageviews by users(past 5 day)',
+                    left: 50,
+                    top: 65,
+                    subtextStyle: {
+                        fontSize: 18
+                    }
+                },
+                {
+                    text: '23:01:04',
+                    subtext: 'TIME LEFT',
+                    left: 50,
+                    top: 160
+                },
+
+                {
+                    text: '$15,596',
+                    subtext: 'TOTAL EARNED',
+                    left: 50,
+                    top: 230
+                },
+
+                {
+                    text: '$3,596',
+                    subtext: 'TOTAL SPERNT',
+                    left: 50,
+                    top: 300
+                }
+            ],
+
+
+
+
+            series: [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: '55%',
+                    center: ['65%', '60%'],
+                    avoidLabelOverlap: true,
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'inside'
+
+                        }
+
+                    },
+                    data: [
+                        { value: 696, name: '69.6%' },
+                        { value: 304 }
+
+                    ]
+
+                }
+            ],
+            animation: false,
+            color: ['green', '#f5f8f9']
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart5.setOption(option5);
+
+        // 基于准备好的第六个dom，初始化echarts实例
+        var myChart6 = echarts.init(document.getElementById('d6'));
+
+        // 指定图表的配置项和数据
+        myChart6.title = '柱状图';
+
+        var option6 = {
+
+            color: ['blue', 'green'],
+            title: [{
+
+                subtext: 'Market value',
+                subtextStyle: {
+                    fontSize: 19
+                }
+            },
+            {
+                text: '$20,467',
+                top: 30,
+                textStyle: {
+                    fontSize: 30
+                }
+            },
+            {
+                subtext: 'March',
+                subtextStyle: {
+                    fontSize: 18
+                },
+                top: 88
+            },
+            {
+                subtext: 'April',
+                subtextStyle: {
+                    fontSize: 18
+                },
+                top: 133
+            },
+            {
+                subtext: 'May',
+                subtextStyle: {
+                    fontSize: 18
+                },
+                top: 175
+            },
+            {
+                subtext: 'June',
+                subtextStyle: {
+                    fontSize: 18
+                },
+                top: 222
+            },
+            {
+                subtext: 'July',
+                subtextStyle: {
+                    fontSize: 18
+                },
+                top: 268
+            },
+            {
+                subtext: 'DAILY',
+                subtextStyle: {
+                    fontSize: 13
+                },
+                bottom: 0
+            },
+            {
+                subtext: 'YEARLY',
+                subtextStyle: {
+                    fontSize: 13
+                },
+                bottom: 0,
+                left: 150
+            },
+            {
+                text: 'MONTHLY',
+                textStyle: {
+                    fontSize: 13
+                },
+                bottom: 0,
+                left: 60
+            },
+            ],
+
+
+            grid: {
+                left: '20%',
+                right: '4%',
+                top: '25%',
+                bottom: '5%',
+                containLabel: true
+            },
+            xAxis: {
+
+                show: false
+            },
+            yAxis: {
+                type: 'category',
+
+                show: false
+            },
+            legend: {
+                data: ['Day', 'Night'],
+                right: 0,
+                bottom: 0
+            },
+            series: [
+                {
+                    name: 'Day',
+                    type: 'bar',
+                    barWidth: '15%',
+                    data: [18203, 23489, 29034, 104970, 131744]
+                },
+                {
+                    name: 'Night',
+                    type: 'bar',
+                    barWidth: '15%',
+                    data: [19325, 23438, 31000, 121594, 134141]
+                }
+            ]
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart6.setOption(option6);
+
+        var myChart7 = echarts.init(document.getElementById('d7'));
+
+        // 指定图表的配置项和数据
+        myChart7.title = '折线图';
+
+        var option7 = {
+            title: [
+                {
+                    text: '25,134',
+                    subtext: 'FOLLOWERS',
+                    left: 234,
+                    top: 100
+                },
+                {
+
+                    subtext: 'Analytics',
+                    left: 50,
+                    top: 20,
+                    subtextStyle: {
+                        fontSize: 18
+                    }
+                },
+                {
+
+                    subtext: 'JUNE 20',
+                    left: 50,
+                    bottom: 30,
+                    subtextStyle: {
+                        fontSize: 18
+                    }
+                },
+                {
+
+                    subtext: 'JULY 15',
+                    left: 234,
+                    bottom: 30,
+                    subtextStyle: {
+                        fontSize: 18
+                    }
+                },
+                {
+
+                    subtext: 'AUGUST 3',
+                    left: 400,
+                    bottom: 30,
+                    subtextStyle: {
+                        fontSize: 18
+                    }
+                },
+
+
+
+
+
+
+            ],
+            xAxis: {
+                type: 'category',
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                show: false
+
+
+            },
+            grid: {
+                left: '10%',
+                right: '10%',
+                top: '45%',
+                bottom: '20%',
+                containLabel: true
+
+            },
+            yAxis: [
+                {
+                    type: 'value',
+                    min: 0,
+                    max: 10,
+                    splitNumber: 2,
+                    axisLabel: {
+                        show: false //这行代码控制着坐标轴x轴的文字是否显示
+                    },
+                    splitLine: {
+                        show: true, // 网格线是否显示
+                        // 改变样式
+                        lineStyle: {
+                            color: '#b6aeae' // 修改网格线颜色
+                        }
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#fff', // x坐标轴的轴线颜色
+                            width: 0 //这里是坐标轴的宽度,为0就是不显示
+                        }
+                    },
+
+
+                }
+            ],
+            series: [{
+                symbol: "none",
+                data: [3, 4, 6, 7, 8, 8, 9],
+                type: 'line',
+                itemStyle: {
+                    normal: {
+                        color: "#2ec7c9",
+                        lineStyle: {
+                            color: "#2ec7c9"
+                        }
+                    }
+                }
+
+            }]
+        };
+
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart7.setOption(option7);
+
+
+    </script>
+</body>
+
+</html>

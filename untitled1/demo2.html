@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            text-align:center;
+
+        }
+
+
+
+        .div1{
+            height: 115px;
+            width:100%;
+            background-color: #aaaaaa;
+        }
+
+        .div2{
+            height: 400px;
+            width: 100%;
+
+        }
+
+        .div3{
+            height: 400px;
+            width: 100%;
+        }
+
+        .div21{
+            width: 1180px;
+
+            height: 100%;
+            margin: 0 auto;
+        }
+        .img1:hover{
+            cursor: pointer;
+        }
+        .span1:hover{
+            cursor: pointer;
+
+        }
+
+        .div211{
+            float: left;
+            line-height: 50px;
+            width: 106.25px;
+            background-color: #FFFFFF;
+            color:#222222
+
+        }
+        .div211:hover{
+            cursor: pointer;
+            background-color: #34b3e0;
+            color: #FFFFFF;
+        }
+        .div221:hover{
+            cursor: pointer;
+
+        }
+        #div2111{
+
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 169.6px;
+            height: 348px;
+            width: 330px;
+            background-color: rgba(30,36,106, 0.5);
+            color: #FFFFFF
+        }
+
+        .img2{
+            position: absolute;
+            margin-top: 110px;
+
+            width: 180px;
+            border: #aaaaaa 3px solid;
+            border-radius: 50%
+        }
+
+        #img21{
+            margin-left: -575px;
+        }
+
+        #img22{
+            margin-left: -335px;
+        }
+
+        #img23{
+            margin-left: -95px;
+        }
+
+        #img24{
+            margin-left: 145px;
+        }
+
+        #img25{
+            margin-left: 385px;
+        }
+
+        #img26{
+            margin-left: 625px;
+        }
+
+        .span21{
+            position: absolute;
+            margin-top: 300px;
+        }
+
+
+        #sapn21{
+            margin-left: -590px
+        }
+
+        #sapn22{
+            margin-left: -350px
+        }
+
+        #sapn23{
+            margin-left: -110px
+        }
+
+        #sapn24{
+            margin-left: 130px
+        }
+
+        #sapn25{
+            margin-left: 370px
+        }
+
+        #sapn26{
+            margin-left: 610px
+        }
+
+        .h1:hover{
+            cursor: pointer;
+        }
+        .btn{
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            border-radius: 100%;
+            background-color: #111111;
+            margin-top: 350px;
+            z-index: 2;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        function f1(){
+            var div=document.getElementById('div2111');
+            if(div.style.marginTop=="400px"){
+                div.style.marginTop=50+'px';
+            }else{
+                div.style.marginTop=400+'px';
+            }
+        }
+        var t=1;
+
+        function f2() {
+            if(t==1){
+
+                var img21=document.getElementById('img21');
+                var img22=document.getElementById('img22');
+                var img23=document.getElementById('img23');
+                var img24=document.getElementById('img24');
+                var img25=document.getElementById('img25');
+                var img26=document.getElementById('img26');
+
+                var m1=parseInt(window.getComputedStyle(img21, null).marginLeft);
+                var m2=parseInt(window.getComputedStyle(img22, null).marginLeft);
+                var m3=parseInt(window.getComputedStyle(img23, null).marginLeft);
+                var m4=parseInt(window.getComputedStyle(img24, null).marginLeft);
+                var m5=parseInt(window.getComputedStyle(img25, null).marginLeft);
+                var m6=parseInt(window.getComputedStyle(img26, null).marginLeft);
+                img21.style.marginLeft=m1-240+'px';
+                img22.style.marginLeft=m2-240+'px';
+                img23.style.marginLeft=m3-240+'px';
+                img24.style.marginLeft=m4-240+'px';
+                img25.style.marginLeft=m5-240+'px';
+                img26.style.marginLeft=m6-240+'px';
+
+                var span21=document.getElementById('sapn21');
+                var span22=document.getElementById('sapn22');
+                var span23=document.getElementById('sapn23');
+                var span24=document.getElementById('sapn24');
+                var span25=document.getElementById('sapn25');
+                var span26=document.getElementById('sapn26');
+
+                m1=parseInt(window.getComputedStyle(span21, null).marginLeft);
+                m2=parseInt(window.getComputedStyle(span22, null).marginLeft);
+                m3=parseInt(window.getComputedStyle(span23, null).marginLeft);
+                m4=parseInt(window.getComputedStyle(span24, null).marginLeft);
+                m5=parseInt(window.getComputedStyle(span25, null).marginLeft);
+                m6=parseInt(window.getComputedStyle(span26, null).marginLeft);
+
+                span21.style.marginLeft=m1-240+'px';
+                span22.style.marginLeft=m2-240+'px';
+                span23.style.marginLeft=m3-240+'px';
+                span24.style.marginLeft=m4-240+'px';
+                span25.style.marginLeft=m5-240+'px';
+                span26.style.marginLeft=m6-240+'px';
+
+                t=0;
+            }
+        }
+
+        function f3() {
+            if(t==0){
+
+                var img21=document.getElementById('img21');
+                var img22=document.getElementById('img22');
+                var img23=document.getElementById('img23');
+                var img24=document.getElementById('img24');
+                var img25=document.getElementById('img25');
+                var img26=document.getElementById('img26');
+
+                var m1=parseInt(window.getComputedStyle(img21, null).marginLeft);
+                var m2=parseInt(window.getComputedStyle(img22, null).marginLeft);
+                var m3=parseInt(window.getComputedStyle(img23, null).marginLeft);
+                var m4=parseInt(window.getComputedStyle(img24, null).marginLeft);
+                var m5=parseInt(window.getComputedStyle(img25, null).marginLeft);
+                var m6=parseInt(window.getComputedStyle(img26, null).marginLeft);
+                img21.style.marginLeft=m1+240+'px';
+                img22.style.marginLeft=m2+240+'px';
+                img23.style.marginLeft=m3+240+'px';
+                img24.style.marginLeft=m4+240+'px';
+                img25.style.marginLeft=m5+240+'px';
+                img26.style.marginLeft=m6+240+'px';
+
+                var span21=document.getElementById('sapn21');
+                var span22=document.getElementById('sapn22');
+                var span23=document.getElementById('sapn23');
+                var span24=document.getElementById('sapn24');
+                var span25=document.getElementById('sapn25');
+                var span26=document.getElementById('sapn26');
+
+                m1=parseInt(window.getComputedStyle(span21, null).marginLeft);
+                m2=parseInt(window.getComputedStyle(span22, null).marginLeft);
+                m3=parseInt(window.getComputedStyle(span23, null).marginLeft);
+                m4=parseInt(window.getComputedStyle(span24, null).marginLeft);
+                m5=parseInt(window.getComputedStyle(span25, null).marginLeft);
+                m6=parseInt(window.getComputedStyle(span26, null).marginLeft);
+
+                span21.style.marginLeft=m1+240+'px';
+                span22.style.marginLeft=m2+240+'px';
+                span23.style.marginLeft=m3+240+'px';
+                span24.style.marginLeft=m4+240+'px';
+                span25.style.marginLeft=m5+240+'px';
+                span26.style.marginLeft=m6+240+'px';
+
+                t=1;
+            }
+        }
+        var index=-1;
+
+        function f4() {
+            if(index>=7){
+                f6();
+            }
+            if(index>=0){
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            d2(div31);
+            d2(div32);
+            d2(div33);
+            d2(div34);
+            d2(div35);
+            d2(div36);
+            d2(div37);
+            d2(div38);
+            }
+            index=index+1;
+            var btn = document.getElementsByTagName("button");
+            for (var i=0;i<btn.length;i++){
+                btn[i].style.backgroundColor="#111111";
+            }
+            btn[index].style.backgroundColor="#FFFFFF";
+
+
+        }
+        function f5() {
+            if(index<=0){
+                return;
+            }
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            d1(div31);
+            d1(div32);
+            d1(div33);
+            d1(div34);
+            d1(div35);
+            d1(div36);
+            d1(div37);
+            d1(div38);
+            index=index-1;
+            var btn = document.getElementsByTagName("button");
+            for (var i=0;i<btn.length;i++){
+                btn[i].style.backgroundColor="#111111";
+            }
+            btn[index].style.backgroundColor="#FFFFFF";
+
+
+        }
+        function d2(e) {
+            var m=parseInt(e.style.marginLeft);
+            e.style.marginLeft=m-1180+'px';
+        }
+        function d1(e) {
+            var m=parseInt(e.style.marginLeft);
+            e.style.marginLeft=m+1180+'px';
+        }
+        var timer = null;
+        function autoPlay () {
+
+                timer = setInterval(function () {
+
+                        f4();
+
+                },1000);
+
+
+
+
+        }
+        autoPlay();
+        function f6() {
+            index=-1;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='169.6px';
+            div32.style.marginLeft='1349.6px';
+            div33.style.marginLeft='2529.6px';
+            div34.style.marginLeft='3709.6px';
+            div35.style.marginLeft='4889.6px';
+            div36.style.marginLeft='6069.6px';
+            div37.style.marginLeft='7249.6px';
+            div38.style.marginLeft='8429.6px';
+        }
+        function f7() {
+            index=0;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='169.6px';
+            div32.style.marginLeft='1349.6px';
+            div33.style.marginLeft='2529.6px';
+            div34.style.marginLeft='3709.6px';
+            div35.style.marginLeft='4889.6px';
+            div36.style.marginLeft='6069.6px';
+            div37.style.marginLeft='7249.6px';
+            div38.style.marginLeft='8429.6px';
+        }
+        function f8() {
+            index=1;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='-1010.4px';
+            div32.style.marginLeft='169.6px';
+            div33.style.marginLeft='1349.6px';
+            div34.style.marginLeft='2529.6px';
+            div35.style.marginLeft='3709.6px';
+            div36.style.marginLeft='4889.6px';
+            div37.style.marginLeft='6069.6px';
+            div38.style.marginLeft='7249.6px';
+
+        }
+        function f9() {
+            index=2;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='-2190.4px';
+            div32.style.marginLeft='-1010.4px';
+            div33.style.marginLeft='169.6px';
+            div34.style.marginLeft='1349.6px';
+            div35.style.marginLeft='2529.6px';
+            div36.style.marginLeft='3709.6px';
+            div37.style.marginLeft='4889.6px';
+            div38.style.marginLeft='6069.6px';
+
+
+        }
+        function f10() {
+            index=3;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='-3370.4px';
+            div32.style.marginLeft='-2190.4px';
+            div32.style.marginLeft='-1010.4px';
+            div34.style.marginLeft='169.6px';
+            div35.style.marginLeft='1349.6px';
+            div36.style.marginLeft='2529.6px';
+            div37.style.marginLeft='3709.6px';
+            div38.style.marginLeft='4889.6px';
+
+
+
+        }
+        function f11() {
+            index=4;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='-4550.4px';
+            div32.style.marginLeft='-3370.4px';
+            div33.style.marginLeft='-2190.4px';
+            div34.style.marginLeft='-1010.4px';
+            div35.style.marginLeft='169.6px';
+            div36.style.marginLeft='1349.6px';
+            div37.style.marginLeft='2529.6px';
+            div38.style.marginLeft='3709.6px';
+
+        }
+        function f12() {
+            index=5;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='-5730.4px';
+            div32.style.marginLeft='-4550.4px';
+            div33.style.marginLeft='-3370.4px';
+            div34.style.marginLeft='-2190.4px';
+            div35.style.marginLeft='-1010.4px';
+            div36.style.marginLeft='169.6px';
+            div37.style.marginLeft='1349.6px';
+            div38.style.marginLeft='2529.6px';
+
+
+
+        }
+        function f13() {
+            index=6;
+            var div31=document.getElementById('div31');
+            var div32=document.getElementById('div32');
+            var div33=document.getElementById('div33');
+            var div34=document.getElementById('div34');
+            var div35=document.getElementById('div35');
+            var div36=document.getElementById('div36');
+            var div37=document.getElementById('div37');
+            var div38=document.getElementById('div38');
+            div31.style.marginLeft='-6910.4px';
+            div32.style.marginLeft='-5730.4px';
+            div33.style.marginLeft='-4550.4px';
+            div34.style.marginLeft='-3370.4px';
+            div35.style.marginLeft='-2190.4px';
+            div36.style.marginLeft='-1010.4px';
+            div37.style.marginLeft='169.6px';
+            div38.style.marginLeft='1349.6px';
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="div1">
+        <div style="background-color: #2e3a4b;height: 35px;">
+            <div style="float: left;width: 169.6px;height:100%"></div>
+            <div style="float: left;width: 1180px;height:100%;color: #FFFFFF">
+                <span  style="float: left;line-height: 35px;padding-left: 60px">
+                    欢迎来到综信财务！ 
+                </span>
+                <img class="img1" src="2/f18a.png" style="float: left;padding-top: 10.5px;padding-left: 25px">
+                <img class="img1" src="2/图层%202.png" style="float: left;padding-top: 10.5px;padding-left: 25px">
+                <img class="img1" src="2/图层%205.png" style="float: left;padding-top: 10.5px;padding-left: 35px">
+                <span class="span1"  style="float: left;line-height: 35px;padding-left: 10px">
+                    移动应用
+                </span>
+                <img class="img1" src="2/_.png" style="float: left;padding-top: 15px;padding-left: 5px">
+
+
+                <img  src="2/客服热线：0755-88869948.png" style="float: right;padding-top: 1px;padding-right: 10px">
+
+                <img class="img1" src="2/图层%204.png" style="float: right;padding-top: 10px;padding-right: 5px">
+
+                <span class="span1"  style="float: right;line-height: 35px;padding-right: 12px">
+                    联系我们
+                </span>
+                <span style="float: right;line-height: 35px;padding-right: 12px;">
+                  |
+                </span>
+                <span class="span1"  style="float: right;line-height: 35px;padding-right: 12px">
+                    加入收藏
+                </span>
+                <span style="float: right;line-height: 35px;padding-right: 12px;">
+                  |
+                </span>
+                <span class="span1"  style="float: right;line-height: 35px;padding-right: 12px">
+                    设为首页
+                </span>
+                <span style="float: right;line-height: 35px;padding-right: 12px;">
+                  |
+                </span>
+
+                <span class="span1"  style="float: right;line-height: 35px;padding-right: 12px">
+                    登陆/注册
+                </span>
+
+                <img class="img1" src="2/图层%203.png" style="float: right;padding-top: 10px;padding-right: 5px">
+
+            </div>
+            <div style="float: left;width: 169.6px;height:100%"></div>
+
+        </div>
+        <div style="background-color: #FFFFFF;height: 80px">
+            <div style="float: left;width: 169.6px;height:100%"></div>
+            <div style="float: left;width: 1180px;height:100%;">
+
+                <img  src="2/综信财务.png" style="float: left;padding-top: 10.5px;padding-left: 20px;width: 270px;height: 100%">
+
+
+
+                <span   style="float: right;line-height: 80px;padding-right: 30px">
+                    售后无忧
+                </span>
+                <img  src="2/图层 10.png" style="float: right;padding-top: 30px;padding-right: 5px">
+
+                <span   style="float: right;line-height: 80px;padding-right: 15px">
+                    专人服务
+                </span>
+
+                <img  src="2/图层 9.png" style="float: right;padding-top: 30px;padding-right: 5px">
+
+                <span   style="float: right;line-height: 80px;padding-right: 15px">
+                    支付安全
+                </span>
+
+                <img  src="2/图层 8.png" style="float: right;padding-top: 30px;padding-right: 5px">
+
+                <span  style="float: right;line-height: 80px;padding-right: 15px">
+                    资质认证
+                </span>
+
+                <img  src="2/图层 7.png" style="float: right;padding-top: 30px;padding-right: 5px">
+
+
+
+            </div>
+            <div style="float: left;width: 169.6px;height:100%"></div>
+        </div>
+    </div>
+    <div id="div2" class="div2" style="background-color: #FFFFFF;position: relative;overflow: hidden">
+        <div id="div2111" >
+            <div style="height: 69px;width: 330px;">
+                <span style="line-height: 70px">公司注册、公司变更、办资质</span><span class="span1" style="padding-left: 80px">></span>
+            </div>
+            <div style="height: 69px;width: 330px;border-top: #aaaaaa solid 1px">
+                <span style="line-height: 70px">代理记账、审计、税务代办</span><span class="span1" style="padding-left: 95px">></span>
+            </div>
+            <div style="height: 69px;width: 330px;border-top: #aaaaaa solid 1px">
+                <span style="line-height: 70px">商标注册、著作权、专利</span><span class="span1" style="padding-left: 110px">></span>
+            </div>
+            <div style="height: 69px;width: 330px;border-top: #aaaaaa solid 1px">
+                <span style="line-height: 70px">企业社保、个人社保、公积金</span><span class="span1" style="padding-left: 80px">></span>
+            </div>
+            <div style="height: 68px;width: 330px;border-top: #aaaaaa solid 1px">
+                <span style="line-height: 70px">问律师、写合同、法律顾问</span><span class="span1" style="padding-left: 95px">></span>
+            </div>
+
+        </div>
+        <div id="div2_1" style="height: 50px;background-color: #FFFFFF">
+            <div style="float: left;width: 169.6px;height:100%"></div>
+            <div style="float: left;width: 1180px;height:100%;">
+
+                <div  class="div211" style="width: 330px;background-color: #34b3e0" onclick="f1()" onmouseover="f1()">
+                    全部服务分类
+                </div>
+                <div   class="div211" >
+                    首页
+                </div>
+                <div class="div211" >
+                    公司注册
+                </div>
+                <div  class="div211" >
+                    财税代理
+                </div>
+                <div class="div211"  >
+                    政府批文
+                </div>
+                <div class="div211"  >
+                    食品卫生
+                </div>
+                <div  class="div211" >
+                    商标专利
+                </div>
+                <div  class="div211" >
+                    工作签证
+                </div>
+                <div  class="div211" >
+                    关于我们
+                </div>
+
+
+            </div>
+            <div style="float: left;width: 169.6px;height:100%"></div>
+        </div>
+        <img src="2/图层%2044.png" style="width: 100%;z-index: -1">
+
+    </div>
+    <div class="div2 " style="background-color: #f5f5f5">
+        <div class="div21" >
+            <div style="height: 100px;text-align: center">
+                <h2 style="line-height: 100px">我们的服务</h2>
+
+            </div>
+            <div style="height: 250px;background-color: #f5f5f5">
+                <div style="width: 3px;height: 250px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 230px;height: 250px;float: left;">
+                    <div style="height: 30px;width: 100%"></div>
+                    <div style="height: 80px;width: 100%">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div style="height:100%;width: 80px;background-color: #f5f5f5;float: left;border: #f5f5f5 solid 1px;border-radius: 50%">
+                            <img src="2/图层 15.png" style="padding-top: 25px">
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 35px;width: 100%;float:left;text-align: center">
+                        <h3 style="text-align: center">公司注册</h3>
+                    </div>
+                    <div style="height: 25px;width: 100%;float:left;text-align: center;font-size: small">
+                       线上提交资料，为您快速注册公司
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div class="div221" style="height:100%;width: 80px;background-color: #fd5a66;float: left;border: #fd5a66 solid 1px;color: #FFFFFF">
+                            <span style="line-height: 30px">查看详情</span>
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 10px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center;font-size: small">
+                       已有<span style="color: red">10000+</span>个企业选择
+                    </div>
+
+                </div>
+                <div style="width: 6px;height: 250px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 230px;height: 250px;float: left;">
+                    <div style="height: 30px;width: 100%"></div>
+                    <div style="height: 80px;width: 100%">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div style="height:100%;width: 80px;background-color: #f5f5f5;float: left;border: #f5f5f5 solid 1px;border-radius: 50%">
+                            <img src="2/矢量智能对象.png" style="padding-top: 25px">
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 35px;width: 100%;float:left;text-align: center">
+                        <h3 style="text-align: center">财税服务</h3>
+                    </div>
+                    <div style="height: 25px;width: 100%;float:left;text-align: center;font-size: small">
+                        从业三年以上会计师，专业又贴心
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div class="div221" style="height:100%;width: 80px;background-color: #fd5a66;float: left;border: #fd5a66 solid 1px;color: #FFFFFF">
+                            <span style="line-height: 30px">查看详情</span>
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 10px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center;font-size: small">
+                        已有<span style="color: red">10000+</span>个企业选择
+                    </div>
+                </div>
+                <div style="width: 6px;height: 250px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 230px;height: 250px;float: left;">
+                    <div style="height: 30px;width: 100%"></div>
+                    <div style="height: 80px;width: 100%">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div style="height:100%;width: 80px;background-color: #f5f5f5;float: left;border: #f5f5f5 solid 1px;border-radius: 50%">
+                            <img src="2/矢量智能对象2.png" style="padding-top: 25px">
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 35px;width: 100%;float:left;text-align: center">
+                        <h3 style="text-align: center">专项审批</h3>
+                    </div>
+                    <div style="height: 25px;width: 100%;float:left;text-align: center;font-size: small">
+                        专项审批更专业，优质服务更省心
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div class="div221" style="height:100%;width: 80px;background-color: #fd5a66;float: left;border: #fd5a66 solid 1px;color: #FFFFFF">
+                            <span style="line-height: 30px">查看详情</span>
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 10px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center;font-size: small">
+                        已有<span style="color: red">10000+</span>个企业选择
+                    </div>
+                </div>
+                <div style="width: 6px;height: 250px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 230px;height: 250px;float: left;">
+                    <div style="height: 30px;width: 100%"></div>
+                    <div style="height: 80px;width: 100%">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div style="height:100%;width: 80px;background-color: #f5f5f5;float: left;border: #f5f5f5 solid 1px;border-radius: 50%">
+                            <img src="2/图层 16.png" style="padding-top: 25px">
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 35px;width: 100%;float:left;text-align: center">
+                        <h3 style="text-align: center">商标注册</h3>
+                    </div>
+                    <div style="height: 25px;width: 100%;float:left;text-align: center;font-size: small">
+                        24小时内提交申请，注册成功率高
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div class="div221" style="height:100%;width: 80px;background-color: #fd5a66;float: left;border: #fd5a66 solid 1px;color: #FFFFFF">
+                            <span style="line-height: 30px">查看详情</span>
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 10px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center;font-size: small">
+                        已有<span style="color: red">10000+</span>个企业选择
+                    </div>
+                </div>
+                <div style="width: 6px;height: 250px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 230px;height: 250px;float: left;">
+                    <div style="height: 30px;width: 100%"></div>
+                    <div style="height: 80px;width: 100%">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div style="height:100%;width: 80px;background-color: #f5f5f5;float: left;border: #f5f5f5 solid 1px;border-radius: 50%">
+                            <img src="2/矢量智能对象3.png" style="padding-top: 25px">
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 35px;width: 100%;float:left;text-align: center">
+                        <h3 style="text-align: center">一般纳税人</h3>
+                    </div>
+                    <div style="height: 25px;width: 100%;float:left;text-align: center;font-size: small">
+                        纳税资格提交申请，申请成功率高
+                    </div>
+                    <div style="height: 5px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center">
+                        <div style="height:100%;width: 75px;float: left"></div>
+                        <div class="div221" style="height:100%;width: 80px;background-color: #fd5a66;float: left;border: #fd5a66 solid 1px;color: #FFFFFF">
+                            <span style="line-height: 30px">查看详情</span>
+                        </div>
+                        <div style="height:100%;width: 70px;float: left"></div>
+                    </div>
+                    <div style="height: 10px;width: 100%;float:left;"></div>
+                    <div style="height: 30px;width: 100%;float:left;text-align: center;font-size: small">
+                        已有<span style="color: red">10000+</span>个企业选择
+                    </div>
+                </div>
+                <div style="width: 3px;height: 250px;float: left;"></div>
+
+            </div>
+            <div style="height: 50px;">
+
+            </div>
+        </div>
+    </div>
+    <div class="div2"  style="background-color: #FFFFFF;">
+        <div class="div21" >
+            <div style="height: 100px;text-align: center">
+                <h2 style="line-height: 100px">行内资讯</h2>
+
+            </div>
+            <div style="height: 250px;background-color: #FFFFFF">
+                <div style="width: 12.5px;height: 250px;float: left;"></div>
+
+                <div style="background-color: #FFFFFF;width: 270px;height: 250px;float: left;border: #aaaaaa solid 1px">
+                    <img src="2/图层 3 拷贝.png" style="height: 180px;width: 100%">
+                    <div style="height: 20px"><h5>那些因素决定企业所得税的多少</h5></div>
+                    <div style="height: 10px"></div>
+                    <div style="height: 40px">
+                        <div style="float: left;padding-left: 10px">
+                            <img src="2/图层 19.png">
+                        </div>
+                        <div style="float: left;padding-left: 10px;color: #aaaaaa">
+                            2016-2-27
+                        </div>
+                        <div style="float: right;padding-right: 10px;width: 10px;height: 100%"></div>
+                        <div class="div221" style="float: right;padding-right: 10px;color: #aaaaaa;border: #aaaaaa  solid 1px">
+                            MORE+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 25px;height: 250px;float: left;"></div>
+
+                <div style="background-color: #FFFFFF;width: 270px;height: 250px;float: left;border: #aaaaaa solid 1px">
+                    <img src="2/图层 3 拷贝.png" style="height: 180px;width: 100%">
+                    <div style="height: 20px"><h5>那些因素决定企业所得税的多少</h5></div>
+                    <div style="height: 10px"></div>
+                    <div style="height: 40px">
+                        <div style="float: left;padding-left: 10px">
+                            <img src="2/图层 19.png">
+                        </div>
+                        <div style="float: left;padding-left: 10px;color: #aaaaaa">
+                            2016-2-27
+                        </div>
+                        <div style="float: right;padding-right: 10px;width: 10px;height: 100%"></div>
+                        <div class="div221" style="float: right;padding-right: 10px;color: #aaaaaa;border: #aaaaaa  solid 1px">
+                            MORE+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 25px;height: 250px;float: left;"></div>
+
+                <div style="background-color: #FFFFFF;width: 270px;height: 250px;float: left;border: #aaaaaa solid 1px">
+                    <img src="2/图层 3 拷贝.png" style="height: 180px;width: 100%">
+                    <div style="height: 20px"><h5>那些因素决定企业所得税的多少</h5></div>
+                    <div style="height: 10px"></div>
+                    <div style="height: 40px">
+                        <div style="float: left;padding-left: 10px">
+                            <img src="2/图层 19.png">
+                        </div>
+                        <div style="float: left;padding-left: 10px;color: #aaaaaa">
+                            2016-2-27
+                        </div>
+                        <div style="float: right;padding-right: 10px;width: 10px;height: 100%"></div>
+                        <div class="div221" style="float: right;padding-right: 10px;color: #aaaaaa;border: #aaaaaa  solid 1px">
+                            MORE+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 25px;height: 250px;float: left;"></div>
+
+                <div style="background-color: #FFFFFF;width: 270px;height: 250px;float: left;border: #aaaaaa solid 1px">
+                    <img src="2/图层 3 拷贝.png" style="height: 180px;width: 100%">
+                    <div style="height: 20px"><h5>那些因素决定企业所得税的多少</h5></div>
+                    <div style="height: 10px"></div>
+                    <div style="height: 40px">
+                        <div style="float: left;padding-left: 10px">
+                            <img src="2/图层 19.png">
+                        </div>
+                        <div style="float: left;padding-left: 10px;color: #aaaaaa">
+                            2016-2-27
+                        </div>
+                        <div style="float: right;padding-right: 10px;width: 10px;height: 100%"></div>
+                        <div class="div221" style="float: right;padding-right: 10px;color: #aaaaaa;border: #aaaaaa  solid 1px">
+                            MORE+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 12.5px;height: 250px;float: left;"></div>
+            </div>
+            <div style="height: 50px;">
+            </div>
+        </div>
+    </div>
+    <div class="div2" style="background-color: #f5f5f5;position: relative">
+        <div style="width: 165px;height: 400px;position: absolute;">
+            <h1 class="h1" style="float: right;line-height: 400px" onclick="f3()"><</h1>
+        </div>
+        <div style="width: 1190px;height: 400px;position: absolute;margin-left: 169.6px;overflow: hidden">
+            <h1 style="position: absolute;margin-top: 20px;margin-left: 490px">公司注册流程</h1>
+            <img id="img21" class="img2" src="2/图层 25.png" >
+            <img id="img22" class="img2" src="2/图层 25.png" >
+            <img id="img23" class="img2" src="2/图层 25.png" >
+            <img id="img24" class="img2" src="2/图层 25.png" >
+            <img id="img25" class="img2" src="2/图层 25.png" >
+            <img id="img26" class="img2" src="2/图层 27.png" >
+            <span id="sapn21" class="span21" >
+                <span style="font-size: large">步骤一</span>
+                </br>
+                </br>
+                <span>与客户洽谈签订注册公司确认单</span>
+            </span>
+            <span  id="sapn22" class="span21">
+                <span style="font-size: large">步骤二</span>
+                </br>
+                </br>
+                <span>与客户洽谈签订注册公司确认单</span>
+            </span>
+            <span  id="sapn23"class="span21" >
+                <span style="font-size: large">步骤三</span>
+                </br>
+                </br>
+                <span>与客户洽谈签订注册公司确认单</span>
+            </span>
+            <span  id="sapn24" class="span21" >
+                <span style="font-size: large">步骤四</span>
+                </br>
+                </br>
+                <span>与客户洽谈签订注册公司确认单</span>
+            </span>
+            <span  id="sapn25" class="span21" >
+                <span style="font-size: large">步骤五</span>
+                </br>
+                </br>
+                <span>与客户洽谈签订注册公司确认单</span>
+            </span>
+
+            <span  id="sapn26" class="span21" >
+                <span style="font-size: large">步骤六</span>
+                </br>
+                </br>
+                <span>与客户洽谈签订注册公司确认单</span>
+            </span>
+
+        </div>
+        <div style="width: 165px;height: 400px;position: absolute;margin-left: 1349.6px">
+            <h1 class="h1" style="float: left;line-height: 400px" onclick="f2()">></h1>
+        </div>
+
+
+    </div>
+    <div class="div2"  style="position: relative;overflow: hidden">
+
+        <div style="position: absolute;width: 50px;height: 100px;margin-left: 200px;margin-top: 150px;background-color: rgba(67,56,50, 0.5);z-index: 2;color: #FFFFFF">
+            <h1 class="h1" style="line-height: 100px" onclick="f5()"><</h1>
+        </div>
+        <div style="position: absolute;width: 50px;height: 100px;margin-left: 1300px;margin-top: 150px;background-color: rgba(67,56,50, 0.5);z-index: 2;color: #FFFFFF">
+            <h1 class="h1" style="line-height: 100px"onclick="f4()">></h1>
+        </div>
+
+        <button class="btn" style="margin-left: 680px;background-color: #FFFFFF" onclick="f6()"></button>
+        <button class="btn" style="margin-left: 700px" onclick="f7()"></button>
+        <button class="btn" style="margin-left: 720px" onclick="f8()"></button>
+        <button class="btn" style="margin-left: 740px" onclick="f9()"></button>
+        <button class="btn" style="margin-left: 760px" onclick="f10()"></button>
+        <button class="btn" style="margin-left: 780px" onclick="f11()"></button>
+        <button class="btn" style="margin-left: 800px" onclick="f12()"></button>
+        <button class="btn" style="margin-left: 820px" onclick="f13()"></button>
+
+        <div id="div31" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 169.6px;overflow: hidden;color: #FFFFFF">
+                <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+                <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                    <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+                </div>
+                <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                    <span style="line-height: 100px;font-size: large">公司素质</span>
+                </div>
+                <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+                </div>
+
+        </div>
+        <div id="div32" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 1349.6px;overflow: hidden;color: #FFFFFF">
+            <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+            <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+            </div>
+            <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                <span style="line-height: 100px;font-size: large">第二页</span>
+            </div>
+            <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+            </div>
+
+        </div>
+        <div id="div33" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 2529.6px;overflow: hidden;color: #FFFFFF">
+            <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+            <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+            </div>
+            <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                <span style="line-height: 100px;font-size: large">第三页</span>
+            </div>
+            <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+            </div>
+
+        </div>
+        <div id="div34" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 3709.6px;overflow: hidden;color: #FFFFFF">
+            <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+            <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+            </div>
+            <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                <span style="line-height: 100px;font-size: large">第四页</span>
+            </div>
+            <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+            </div>
+
+        </div>
+        <div id="div35" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 4889.6px;overflow: hidden;color: #FFFFFF">
+            <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+            <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+            </div>
+            <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                <span style="line-height: 100px;font-size: large">第五页</span>
+            </div>
+            <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+            </div>
+
+        </div>
+        <div id="div36" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 6069.6px;overflow: hidden;color: #FFFFFF">
+            <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+            <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+            </div>
+            <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                <span style="line-height: 100px;font-size: large">第六页</span>
+            </div>
+            <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+            </div>
+
+        </div>
+        <div id="div37" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 7249.6px;overflow: hidden;color: #FFFFFF">
+            <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+            <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+            </div>
+            <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                <span style="line-height: 100px;font-size: large">第七页</span>
+            </div>
+            <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+            </div>
+
+        </div>
+        <div id="div38" style="height: 100%;width: 1180px;background-color: rgba(255,255,255, 0.0);z-index: 1;position: absolute;margin-top: 0px;margin-left: 8429.6px;overflow: hidden;color: #FFFFFF">
+            <div style="position: absolute;margin-top: 50px;margin-left: 520px;font-size: large">为什么选择我们</div>
+            <div style="position: absolute;height: 70px;width: 600px;background-color: #FFFFFF;margin-top: 110px;margin-left: 280px;border-radius: 15px;color: #111111">
+                <span style="line-height: 35px">12年正规公司，深圳政府与香港政府机构鼎立推荐，大陆8个分支机构，香港3个办公地点，近300人，专业顾问团队，注册，变更，报税，财务，批文一条龙</span>
+            </div>
+            <div style="position: absolute;height: 100px;width: 100px;border-radius: 50%;background-color: #2196F3;margin-top: 220px;margin-left: 535px">
+                <span style="line-height: 100px;font-size: large">第八页</span>
+            </div>
+            <div class="one" style="width:0px;height:0px;border-top: 10px solid #FFFFFF;border-left: 10px solid transparent ;border-right: 10px solid transparent;border-bottom: 10px solid transparent;margin-top: 180px;margin-left: 575px">
+
+            </div>
+
+        </div>
+        <img src="2/img.png"style="height: 100%;width: 100%;z-index: -1">
+
+    </div>
+    <div class="div2" style="background-color: #FFFFFF">
+        <div class="div21" >
+            <div style="height: 100px;text-align: center">
+                <h2 style="line-height: 100px">客服心声</h2>
+            </div>
+            <div style="height: 250px;background-color: #FFFFFF">
+                <div style="background-color: #FFFFFF;width: 380px;height: 250px;float: left">
+                    <img src="2/图层 35.png" style="height: 250px;width: 100%">
+                </div>
+                <div style="width: 20px;height: 250px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 380px;height: 250px;float: left">
+                    <img src="2/图层 36.png" style="height: 250px;width: 100%">
+                </div>
+                <div style="width: 20px;height: 250px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 380px;height: 250px;float: left">
+                    <img src="2/图层 36.png" style="height: 250px;width: 100%">
+                </div>
+            </div>
+            <div class="div221" style="height: 50px;width: 100%;text-align: center">
+                <span style="line-height: 50px;border: #aaaaaa solid 1px;padding-right: 10px;padding-left: 10px">查看更多</span>
+            </div>
+        </div>
+    </div>
+    <div class="div3" style="background-color: #f5f5f5">
+        <div class="div21" >
+            <div style="height: 100px;text-align: center">
+                <h2 style="line-height: 100px">合作伙伴</h2>
+            </div>
+            <div style="height: 120px;">
+                <div style="width: 8px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+            </div>
+            <div style="height: 10px;width: 100%;text-align: center"></div>
+            <div style="height: 120px;">
+                <div style="width: 8px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+                <div style="width: 5px;height: 120px;float: left;"></div>
+                <div style="background-color: #FFFFFF;width: 190px;height: 120px;float: left">
+
+                </div>
+            </div>
+            <div class="div221" style="height: 50px;width: 100%;text-align: center">
+            </div>
+        </div>
+
+    </div>
+    <div style="height: 100px;text-align: left;border-top: #111111 1px solid">
+        <div style="height: 50px;padding-left: 169.6px"><h3 style="line-height: 60px">友情链接</h3></div>
+        <div style="height: 50px;padding-left: 169.6px;font-size: small">
+            <span class="span1" style="line-height: 40px">综信大型工商财税</span>
+            <span class="span1" style="line-height: 40px;padding-left: 20px">深圳业信会计师事务所</span>
+            <span class="span1" style="line-height: 40px;padding-left: 20px">综信国际商务有限公司</span>
+            <span class="span1" style="line-height: 40px;padding-left: 20px">深圳综融财富咨询有限公司</span>
+            <span class="span1" style="line-height: 40px;padding-left: 20px">深圳前海综信会计代理有限公司</span>
+            <span class="span1" style="line-height: 40px;padding-left: 20px">深圳市综信企业投资管理顾问有限公司</span>
+
+        </div>
+    </div>
+    <div style="height: 150px;border-top: #111111 1px solid;font-size: small">
+        <div style="height: 50px"></div>
+        <h3 style="position: absolute;padding-left: 340px;padding-bottom: 140px">资质认证</h3>
+        <h3 style="position: absolute;padding-left: 580px;padding-bottom: 140px">支付安全</h3>
+        <h3 style="position: absolute;padding-left: 820px;padding-bottom: 140px">专人服务</h3>
+        <h3 style="position: absolute;padding-left: 1060px;padding-bottom: 140px">售后无忧</h3>
+        <img src="2/图层 38.png">
+        <span>服务商100%实名审核认证</span>
+        <img src="2/图层 39.png" style="padding-left: 45px">
+        <span>明码标价支付及信息安全</span>
+        <img src="2/图层 40.png" style="padding-left: 45px">
+        <span>服务全程进行信息化监控</span>
+        <img src="2/图层 41.png" style="padding-left: 45px">
+        <span>服务出问题客服经理全程跟进</span>
+
+    </div>
+    <div style="height: 240px;border-top: #111111 1px solid">
+        <div style="height: 50px"></div>
+        <div style="height: 150px">
+            <div style="float: left;width: 606px;height:100%;border-right: #111111 1px solid">
+                <h5 style="position: absolute;padding-left: 180px;padding-top: 0px">关于综信财务</h5>
+                <h5 style="position: absolute;padding-left: 350px;padding-top: 0px">售后服务</h5>
+                <h5 style="position: absolute;padding-left: 500px;padding-top: 0px">热门产品</h5>
+                <div class="div221" style="position: absolute;padding-left: 185px;padding-top: 30px">了解我们</div>
+                <div class="div221" style="position: absolute;padding-left: 185px;padding-top: 60px">品牌故事</div>
+                <div class="div221" style="position: absolute;padding-left: 185px;padding-top: 90px">加入我们</div>
+                <div class="div221" style="position: absolute;padding-left: 185px;padding-top: 120px">联系我们</div>
+                <div class="div221" style="position: absolute;padding-left: 350px;padding-top: 30px">服务中心</div>
+                <div class="div221" style="position: absolute;padding-left: 335px;padding-top: 60px">售后服务政策</div>
+                <div class="div221" style="position: absolute;padding-left: 350px;padding-top: 90px">问答中心</div>
+                <div class="div221" style="position: absolute;padding-left: 350px;padding-top: 120px">成功案例</div>
+                <div class="div221" style="position: absolute;padding-left: 495px;padding-top: 30px">公司注册</div>
+                <div class="div221" style="position: absolute;padding-left: 495px;padding-top: 60px">工商注册</div>
+                <div class="div221" style="position: absolute;padding-left: 495px;padding-top: 90px">知识产权</div>
+                <div class="div221" style="position: absolute;padding-left: 495px;padding-top: 120px">财税代理</div>
+
+
+            </div>
+            <div style="float: left;width: 911px;height:100%;">
+                <img src="2/图层 42.png" style="float: left;height: 100%;width: auto;padding-left: 50px">
+                <img src="2/扫描二维码 关注综信财务 精彩一手掌握.png" style="float: left;height: 60%;width: auto;padding-left: 10px;padding-top: 30px">
+                <img src="2/1.png" style="float: left;height: 100%;width: 400px;padding-left: 50px">
+            </div>
+        </div>
+        <div style="height: 40px"></div>
+    </div>
+    <div style="height: 30px;background-color: #2e3a4b">
+        <img src="2/2.png">
+    </div>
+
+</body>
+</html>
